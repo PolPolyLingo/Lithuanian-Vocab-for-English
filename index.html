@@ -205,13 +205,7 @@
             margin-bottom: 8px;
         }
 
-        .word-english {
-            font-size: 0.95em;
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .word-pronunciation {
+        .word-type {
             font-size: 0.85em;
             color: #999;
             font-style: italic;
@@ -327,7 +321,6 @@
                 <select id="categoryFilter">
                     <option value="">All Categories</option>
                     <option value="Finances">Finances</option>
-                    <option value="Inances">Inances</option>
                 </select>
 
                 <button onclick="resetFilters()">Reset Filters</button>
@@ -352,6 +345,7 @@
             "S": [
                 {
                     lithuanian: "Skola",
+                    type: "noun",
                     description: "When You don't have money for scholarship, but You go for another drink of Cola.",
                     imageUrl: "finances/SKOLA.png",
                     category: "Finances"
@@ -447,6 +441,7 @@
                     </div>
                     <div class="card-content">
                         <div class="word-lithuanian">${item.lithuanian}</div>
+                        <div class="word-type">${item.type}</div>
                         <div class="word-description">${item.description}</div>
                         <div class="tags">
                             <span class="tag">${item.category}</span>
