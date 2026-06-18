@@ -324,6 +324,7 @@
                     <option value="Communications">Communications</option>
                     <option value="Computers">Computers</option>
                     <option value="Finances">Finances</option>
+                    <option value="Transportation">Transportation</option>
                 </select>
 
                 <button onclick="resetFilters()">Reset Filters</button>
@@ -345,7 +346,17 @@
 
     <script>
         const vocabularyData = {
+            "A": [
+                {
+                    lithuanian: "Automašina",
+                    type: "noun",
+                    description: "Before a flying saucer there was a car.",
+                    imageUrl: "transportation/AUTOMAŠINA.png",
+                    category: "Transportation"
+                }
+            ],
             "F": [
+
                 {
                     lithuanian: "Ferma",
                     type: "noun",
